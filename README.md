@@ -907,3 +907,236 @@ To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
 Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
 $
 ```
+### Exercise 2
+ ```bash
+ 
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'  
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.     
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git add home.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m " add home page"
+[main 95a29dd]  add home page
+ 1 file changed, 1 insertion(+)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git push origing main
+fatal: 'origing' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git push origin  main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+   b826421..95a29dd  main -> main
+
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git log --oneline --reverse
+9c0d739 Initial commit
+b875379 (origin/dev, dev) bubble1: creating a file and fill the content
+3527c9a about and home
+1346196 exercise 2
+bb09f1f adding content to services
+3cc3cd7 (origin/ft/bundle-2) updating readme content
+2eeac7b Merge pull request #1 from dieuaime-shami/ft/bundle-2 done
+bf9b71a read me
+7788476 read me
+2cc3ad5 add team page
+273b23d (origin/ft/contact-page, ft/contact-page) ft: add content
+c35e370 (origin/ft/faq-page) add faq.hmtl
+ce32493 Revert "add faq.hmtl"
+f086277 (HEAD -> ft/home-page-redesign, ft/faq-page) add afaq file
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)        
+$ git rebase --abort 
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --abort
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git stash
+Saved working directory and index state WIP on ft/home-page-redesign: f086277 add afaq file
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase main
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --continue
+README.md: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git status
+interactive rebase in progress; onto 95a29dd
+Last command done (1 command done):
+   pick 7788476 read me
+Next commands to do (5 remaining commands):
+   pick 2cc3ad5 add team page
+   pick 273b23d ft: add content
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'ft/home-page-redesign' on '95a29dd'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git add READE.md
+fatal: pathspec 'READE.md' did not match any files
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git add READE.md
+fatal: pathspec 'READE.md' did not match any files
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git add README.md 
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git commit -m "read me file"
+interactive rebase in progress; onto 95a29dd
+Last command done (1 command done):
+   pick 7788476 read me
+Next commands to do (5 remaining commands):
+   pick 2cc3ad5 add team page
+   pick 273b23d ft: add content
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'ft/home-page-redesign' on '95a29dd'.
+  (all conflicts fixed: run "git rebase --continue")
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git status
+interactive rebase in progress; onto 95a29dd
+Last command done (1 command done):
+   pick 7788476 read me
+Next commands to do (5 remaining commands):
+   pick 2cc3ad5 add team page
+   pick 273b23d ft: add content
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'ft/home-page-redesign' on '95a29dd'.
+  (all conflicts fixed: run "git rebase --continue")
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase main
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
+
+
+
+
+
+
+
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign|REBASE 1/6)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise SolutiShami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add home.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "home page"
+[ft/home-page-redesign ba9ac6f] home page
+ 1 file changed, 1 insertion(+)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 1.74 KiB | 1.74 MiB/s, done.
+Total 16 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), completed with 1 local object.     
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git      
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign      
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+```
