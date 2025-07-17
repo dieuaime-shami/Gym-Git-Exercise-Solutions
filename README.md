@@ -199,3 +199,7 @@ remote:
 To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
  ```
+  ### Exercise 2
+  ```bash
+  
+  ```
