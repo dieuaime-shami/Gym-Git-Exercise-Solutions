@@ -1,7 +1,7 @@
 # Gym-Git-Exercise-Solutions
 ## Bundle1
 ### Exercise1
-```bash
+ ```bash
  Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
 $ touch index.html
 
@@ -46,7 +46,7 @@ $ git push origin --delete text
 To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
  - [deleted]         text
 
-```
+ ```
  ### Exercise2
  ```bash
   Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
@@ -166,6 +166,36 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
+ ```
+ ## Bundle 2
+ ```bash
+$ git branch ft/bundle-2
 
+Switched to branch 'ft/bundle-2'
 
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/bundle-2)       
+$ touch services.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/bundle-2)       
+$ git add services.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git commit -m "adding content to services"
+[ft/bundle-2 bb09f1f] adding content to services
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/bundle-2)       
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.  
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0) 
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+me-shami/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2      
+remote:
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
  ```
