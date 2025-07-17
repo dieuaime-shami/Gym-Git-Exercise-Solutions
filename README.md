@@ -263,4 +263,90 @@ Your branch is up to date with 'origin/main'.
 
 Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
 $ git add services.html
+cise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "servises"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 939 bytes | 939.00 KiB/s, done.  
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0) 
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+   2eeac7b..bf9b71a  main -> main
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "servises"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git add services.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "servises"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git commit -m " service "
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Everything up-to-date
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git merge main
+Merge made by the 'ort' strategy.     
+ README.md | 67 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git status
+On branch ft/service-redesign
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 298 bytes | 298.00 KiB/s, done.  
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0) 
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+   169c2fe..0e530a9  ft/service-redesign -> ft/service-redesign
+
 ```
