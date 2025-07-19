@@ -913,4 +913,126 @@ To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
 Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/team-page)
 $
 ```
+## Bundle 4
+### Exercise 2
+```bash
 
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add footer.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "feat: add footer"
+[ft/footer 3776693] feat: add footer
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add footer.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "feat: second footer"
+[ft/footer 7e031a1] feat: second footer
+ 1 file changed, 1 insertion(+)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push 
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 715 bytes | 715.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/squashing
+Already up to date. (nothing to squash)
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m "footer changes squashing"
+On branch ft/squashing
+nothing to commit, working tree clean
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 4cbf75d..7e031a1
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 1b624cd] footer changes squashing
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 453 bytes | 453.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/dieuaime-shami/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing      
+
+Shami dieu aime@SHAMI MINGW64 ~/Documents/thegyme/Gym Git Exercise Solutions/Gym-Git-Exercise-Solutions (ft/squashing)
+$
+```
